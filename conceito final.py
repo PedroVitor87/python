@@ -3,9 +3,11 @@ print('Escolha a opcção que deseja\n1 - Iniciar programa\n2 - Encerrar program
 opcao = int(input('Qual opção você deseja - 1 ou 2: ')) #Opção a ser escolhida)
 
 while True: #Loop proposital
+    
     if (opcao == 1):
         nome = input('Digite o nome do aluno: ')
         nota = float(input('Digite a nota do aluno: '))
+        
         if (nota < 0 or nota >10):
             print('Nota inválida. Encerrando o programa...')
             break
@@ -39,6 +41,7 @@ while True: #Loop proposital
             print('Nota final: {}' .format(nota))
             print('Conceito final: {}' .format(conceito))
             break   
+   
     elif (opcao == 2):
         print('Encerrando o programa ...')
         break
